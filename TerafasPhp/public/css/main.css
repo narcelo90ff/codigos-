@@ -1,0 +1,294 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #f0f2f5;
+    color: #333;
+    min-height: 100vh;
+}
+
+/* ── Navegação ── */
+
+nav {
+    background: #2c3e50;
+    color: #fff;
+    padding: 0 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 56px;
+}
+
+nav > a {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #3498db;
+    text-decoration: none;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+nav ul a {
+    color: #ecf0f1;
+    text-decoration: none;
+    padding: .4rem .8rem;
+    border-radius: 4px;
+    font-size: .9rem;
+}
+
+nav ul a:hover {
+    background: #3d5166;
+}
+
+nav span {
+    font-size: .85rem;
+    color: #95a5a6;
+}
+
+/* ── Layout principal ── */
+
+main {
+    max-width: 960px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+h1 {
+    font-size: 1.5rem;
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-size: 1.1rem;
+    color: #2c3e50;
+    margin-bottom: .75rem;
+}
+
+/* ── Alertas ── */
+
+[data-alerta] {
+    padding: .75rem 1rem;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+    font-size: .9rem;
+}
+
+[data-alerta="erro"] {
+    background: #fdecea;
+    color: #c0392b;
+    border-left: 4px solid #c0392b;
+}
+
+[data-alerta="sucesso"] {
+    background: #eafaf1;
+    color: #27ae60;
+    border-left: 4px solid #27ae60;
+}
+
+/* ── Seções / Cards ── */
+
+section {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .08);
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+/* ── Cabeçalho de página com ação ── */
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+header h1 {
+    margin: 0;
+}
+
+/* ── Stat box ── */
+
+aside {
+    background: #3498db;
+    color: #fff;
+    border-radius: 8px;
+    padding: 1.2rem 1.5rem;
+    display: inline-block;
+    min-width: 140px;
+    margin-bottom: 1.5rem;
+}
+
+aside strong {
+    display: block;
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1;
+}
+
+aside small {
+    display: block;
+    font-size: .85rem;
+    opacity: .85;
+    margin-top: .25rem;
+}
+
+/* ── Tabela ── */
+
+section table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: .9rem;
+}
+
+section table th,
+section table td {
+    padding: .7rem 1rem;
+    text-align: left;
+    border-bottom: 1px solid #ecf0f1;
+}
+
+section table th {
+    background: #f8f9fa;
+    font-weight: 700;
+    color: #555;
+}
+
+section table tr:hover td {
+    background: #fafbfc;
+}
+
+section table td:first-child {
+    color: #95a5a6;
+    width: 50px;
+}
+
+section table td:last-child {
+    width: 140px;
+}
+
+/* ── Botões nas células da tabela ── */
+
+td a,
+td button {
+    display: inline-block;
+    padding: .3rem .7rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: .8rem;
+    text-decoration: none;
+}
+
+td a {
+    background: #f39c12;
+    color: #fff;
+}
+
+td button {
+    background: #e74c3c;
+    color: #fff;
+}
+
+td a:hover,
+td button:hover {
+    opacity: .85;
+}
+
+td form {
+    display: inline;
+}
+
+/* ── Formulários ── */
+
+form div {
+    margin-bottom: 1rem;
+}
+
+form label {
+    display: block;
+    font-size: .85rem;
+    font-weight: 600;
+    color: #555;
+    margin-bottom: .35rem;
+}
+
+form input[type="text"],
+form input[type="password"],
+form textarea {
+    width: 100%;
+    padding: .55rem .75rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: .95rem;
+}
+
+form input[type="text"]:focus,
+form input[type="password"]:focus,
+form textarea:focus {
+    outline: none;
+    border-color: #3498db;
+    box-shadow: 0 0 0 3px rgba(52, 152, 219, .15);
+}
+
+form textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+form footer {
+    display: flex;
+    gap: .75rem;
+}
+
+form button[type="submit"] {
+    padding: .5rem 1.1rem;
+    background: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: .9rem;
+}
+
+form button[type="submit"]:hover {
+    background: #2980b9;
+}
+
+form a {
+    padding: .5rem 1.1rem;
+    background: #7f8c8d;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: .9rem;
+}
+
+form a:hover {
+    opacity: .85;
+}
+
+/* ── Botão de nova tarefa no header ── */
+
+header a {
+    padding: .5rem 1.1rem;
+    background: #27ae60;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: .9rem;
+}
+
+header a:hover {
+    opacity: .85;
+}

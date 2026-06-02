@@ -1,0 +1,107 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #f0f2f5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+/* ── Caixa de login ── */
+
+main {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, .1);
+    padding: 2.5rem 2rem;
+    width: 100%;
+    max-width: 380px;
+}
+
+main h1 {
+    text-align: center;
+    font-size: 1.6rem;
+    color: #2c3e50;
+    margin-bottom: .25rem;
+}
+
+main p {
+    text-align: center;
+    color: #95a5a6;
+    font-size: .85rem;
+    margin-bottom: 1.5rem;
+}
+
+/* ── Alerta de erro ── */
+
+[data-alerta="erro"] {
+    padding: .7rem 1rem;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+    font-size: .875rem;
+    background: #fdecea;
+    color: #c0392b;
+    border-left: 4px solid #c0392b;
+}
+
+/* ── Formulário ── */
+
+form div {
+    margin-bottom: 1rem;
+}
+
+form label {
+    display: block;
+    font-size: .85rem;
+    font-weight: 600;
+    color: #555;
+    margin-bottom: .35rem;
+}
+
+form input {
+    width: 100%;
+    padding: .6rem .8rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: .95rem;
+}
+
+form input:focus {
+    outline: none;
+    border-color: #3498db;
+    box-shadow: 0 0 0 3px rgba(52, 152, 219, .15);
+}
+
+form button {
+    width: 100%;
+    padding: .7rem;
+    background: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: .5rem;
+}
+
+form button:hover {
+    background: #2980b9;
+}
+
+form + form {
+    margin-top: .75rem;
+}
+
+form + form button {
+    background: #e67e22;
+}
+
+form + form button:hover {
+    background: #ca6f1e;
+}
